@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "lib",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "paths": {
+      "@@/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
+      "@/components/*": [
+        "./src/components/*"
+      ],
+      "@/utils/*": [
+        "./src/utils/*"
+      ],
+      "@/package": [
+        "./package.json"
+      ],
+      "@/lib": [
+        "./src/lib/*"
+      ],
+      "@/services/*": [
+        "./src/services/*"
+      ]
+    }
+  },
+  "include": ["./src", "./types",
+    "./typings.d.ts"
+  ],
+  "compileOnSave": false
+}
